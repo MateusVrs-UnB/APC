@@ -1,0 +1,6 @@
+c = input()
+print(c)
+print(2*c)
+print(c, c)
+print(f'2{c}')
+print(f'[{c}]')
