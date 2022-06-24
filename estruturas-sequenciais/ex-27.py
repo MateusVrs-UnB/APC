@@ -1,0 +1,7 @@
+a, b, c = input(), input(), input()
+print(a+b+c)
+print(a)
+print(2*b)
+print(c, c, c)
+print(f'X == {a}, Y == {b}, Z == {c}')
+print(f'X != {b}, Y != {a}, Z == {c}')
