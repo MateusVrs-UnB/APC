@@ -1,7 +1,4 @@
 def pacotesDeBolacha(pots, students, eat):
-    array = list()
-    for number in range(eat, -1, -1):
-        total = (students*number)
-        if pots-total >= 0:
-            array.append(total)
-    print(max(array))
+    cookies = pots//students
+    maximum = min(cookies, eat) * students
+    print(maximum)
