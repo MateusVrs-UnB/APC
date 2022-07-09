@@ -1,13 +1,10 @@
-N = int(input())
-
-def findOne(number):
-    print(N)
+def maravilhosos(number):
+    print(int(number))
     while number != 1:
         if not number % 2:
-            number = number//2
-            print(number)
+            return maravilhosos(number/2)
         else:
-            number = 3*number + 1
-            print(number)
-
-findOne(N)
+            return maravilhosos(3*number + 1)
+            
+N = int(input())
+maravilhosos(N)
