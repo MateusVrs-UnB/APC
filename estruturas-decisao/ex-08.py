@@ -1,19 +1,13 @@
-def triangleType(a, b, c):
-    if a + b > c and b + c > a and a + c > b:
-        if len(set([a, b, c])) == 3:
-            return 'triangulo escaleno'
-        elif len(set([a, b, c])) == 2:
-            return 'triangulo isosceles'
-        else:
-            return 'triangulo equilatero'
-    return False
-
-def squareOrReactangle(a, b):
-    if a == b:
-        return 'quadrado'
-    return 'retangulo'
-
 def formamisteriosa(a, b, c):
-    print(f'pode ser {squareOrReactangle(a, b)}')
-    triangle = triangleType(a, b, c)
-    print(f'pode ser {triangle}') if triangle else None
+    if a == b:
+        print("pode ser quadrado")
+    else:
+        print("pode ser retangulo")
+    if a + b > c and a + c >  b and b + c  > a:
+        if a == b and b == c:
+            tipo = 'equilatero'
+        elif a == b or b == c or c == a:
+            tipo = "isosceles"
+        else:
+            tipo = "escaleno"
+        print(f'pode ser triangulo {tipo}')
