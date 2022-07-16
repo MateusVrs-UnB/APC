@@ -12,4 +12,8 @@ Repository for APC course - UnB/FGA
 <ul>
     <li>18 Execícios</li>
 </ul>
+<h2>Estruturas de Repetição</h2>
+<ul>
+    <li>40 Execícios</li>
+</ul>
 </div>
