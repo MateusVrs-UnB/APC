@@ -1,4 +1,3 @@
-from posixpath import split
 import re
 N = int(input())
 for i in range(N):
